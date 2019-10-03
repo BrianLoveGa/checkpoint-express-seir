@@ -1,13 +1,13 @@
 {
   "name": "checkpoint-express-mongoose",
-  "version": "1.0.0",
+  "version": "1.0.001",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --exit test/*.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brian Loveless - with help from profs at GA",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
