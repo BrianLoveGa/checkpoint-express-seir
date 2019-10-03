@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/notes-checkpoint", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost/notes-checkpoint", {useNewUrlParser: true}).then((conn) => {
+	console.log(`hooked it up mon 🌴 to mongodb on ${conn.connections[0].name} db`)
+})
+.catch(err => {
+	console.error(err)
+});
 
 mongoose.Promise = Promise;
 
